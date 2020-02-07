@@ -16,13 +16,7 @@ public Main(String firstName, String lastName, String gender, String nationality
 	}
 
 
-
- //int age;
-
-
-
-
-	static ArrayList<Team> memberdetails = new ArrayList<Team>();
+static ArrayList<Team> memberdetails = new ArrayList<Team>();
 
 
 	  
@@ -247,23 +241,29 @@ public Main(String firstName, String lastName, String gender, String nationality
 		memberdetails.add(new Team("Shalini", "Shada", "COACH", "FEMALE", "British", LocalDate.of(1985, 11, 14),
 				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
 		
-		memberdetails.add(new Team("Salman", "Khan", "COACH", "MIXED", "British", LocalDate.of(1984, 11, 14),
-				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
-		memberdetails.add(new Team("Salman", "Khan", "COACH", "MIXED", "British", LocalDate.of(1984, 11, 14),
-				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));		
-		memberdetails.add(new Team("Sareez", "Khan", "COACH", "MIXED", "British", LocalDate.of(1983, 11, 14),
-				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
-		memberdetails.add(new Team("Faraha", "Akthar", "COACH", "MIXED", "British", LocalDate.of(1984, 11, 14),
-				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));		
-		memberdetails.add(new Team("Shameem Ali", "Khan", "COACH", "MIXED", "British", LocalDate.of(1985, 11, 14),
-				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
-		
-		memberdetails.add(new Team("Maksood Ali", "Khan", "COACH", "MIXED", "British", LocalDate.of(2005, 11, 14),
-				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
-		memberdetails.add(new Team("Mehaboob", "Khan", "COACH", "MIXED", "British", LocalDate.of(2004, 11, 14),
-				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
-		
-	
+		/*
+		 * memberdetails.add(new Team("Salman", "Khan", "COACH", "MIXED", "British",
+		 * LocalDate.of(1984, 11, 14), "46,Quadrant court", "Mirla square", "Berkshire",
+		 * "Reading", "RG21 7uh", "UK")); memberdetails.add(new Team("Salman", "Khan",
+		 * "COACH", "MIXED", "British", LocalDate.of(1984, 11, 14), "46,Quadrant court",
+		 * "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
+		 * memberdetails.add(new Team("Sareez", "Khan", "COACH", "MIXED", "British",
+		 * LocalDate.of(1983, 11, 14), "46,Quadrant court", "Mirla square", "Berkshire",
+		 * "Reading", "RG21 7uh", "UK")); memberdetails.add(new Team("Faraha", "Akthar",
+		 * "COACH", "MIXED", "British", LocalDate.of(1984, 11, 14), "46,Quadrant court",
+		 * "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
+		 * memberdetails.add(new Team("Shameem Ali", "Khan", "COACH", "MIXED",
+		 * "British", LocalDate.of(1985, 11, 14), "46,Quadrant court", "Mirla square",
+		 * "Berkshire", "Reading", "RG21 7uh", "UK"));
+		 * 
+		 * memberdetails.add(new Team("Maksood Ali", "Khan", "COACH", "MIXED",
+		 * "British", LocalDate.of(2005, 11, 14), "46,Quadrant court", "Mirla square",
+		 * "Berkshire", "Reading", "RG21 7uh", "UK")); memberdetails.add(new
+		 * Team("Mehaboob", "Khan", "COACH", "MIXED", "British", LocalDate.of(2004, 11,
+		 * 14), "46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh",
+		 * "UK"));
+		 * 
+		 */
 		
 		System.out.println("TOTAL NUMBER :" +memberdetails.size());
 		
@@ -356,64 +356,65 @@ public Main(String firstName, String lastName, String gender, String nationality
 			System.out.println("You have entered:" +teamsize);
 				
 			 
-		 Club club=new Club();
+		 Team team=new Team();
 		
 			
 			if( (ageGroup.contains("JUNIOR"))   &&   (gender.contentEquals("MALE") )  &&  (role.contentEquals("COACH") ) ) 
 			{
 		
-			club.getJuniorMaleCoach(teamsize);
+				team.getJuniorMaleCoach(teamsize);
 				
 			}
 			
 			else if( (ageGroup.contains("JUNIOR"))  &&  (gender.contentEquals("MALE"))  &&  (role.contentEquals("PLAYER"))) 
 			{
-				club.getJuniorMalePlayer(teamsize);
+				team.getJuniorMalePlayer(teamsize);
 			}
 		
 			
 			else if( (ageGroup.contains("JUNIOR"))  &&  (gender.contentEquals("FEMALE"))  &&  (role.contentEquals("COACH"))) {
-				club.getJuniorFemaleCoach(teamsize);
+				team.getJuniorFemaleCoach(teamsize);
 			}
 			
 			else if( (ageGroup.contains("JUNIOR"))  &&  (gender.contentEquals("FEMALE"))  &&  (role.contentEquals("PLAYER"))) {
-				club.getJuniorFemalePlayer(teamsize);
+				team.getJuniorFemalePlayer(teamsize);
 			}
 			
 			
 			else if( (ageGroup.contains("JUNIOR"))  &&  (gender.contentEquals("MIXED"))  &&  (role.contentEquals("COACH"))) {
-			club.getJuniorMixedCoach(teamsize);
+				team.getJuniorMixedCoach(teamsize);
 				
 			}
 			
 			else if( (ageGroup.contains("JUNIOR"))  &&  (gender.contentEquals("MIXED")) &&  (role.contentEquals("PLAYER"))) {
-				club.getJuniorMixedPlayer(teamsize);
+				team.getJuniorMixedPlayer(teamsize);
 					
 			}
 			else if( (ageGroup.contains("SENIOR"))  &&  (gender.contentEquals("MIXED")) &&  (role.contentEquals("PLAYER"))) {
-				club.getSeniorMixedPlayer(teamsize);
+				team.getSeniorMixedPlayer(teamsize);
 					
 			}
 			else if( (ageGroup.contains("SENIOR"))  &&  (gender.contentEquals("MIXED")) &&  (role.contentEquals("COACH"))) {
-				club.getSeniorMixedCoach(teamsize);
+				team.getSeniorMixedCoach(teamsize);
 					
 			}
 				
 						
 			else if( (ageGroup.contains("SENIOR"))  &&  (gender.contentEquals("MALE"))  &&  (role.contentEquals("COACH"))) {
-				club.getMaleSeniorCoach(teamsize);
+				team.getMaleSeniorCoach(teamsize);
 			}
 			
 			else if((ageGroup.contains("SENIOR"))  &&  (gender.contentEquals("MALE"))  &&  (role.contentEquals("PLAYER"))) {
-				club.getMaleSeniorPlayer(teamsize);
+				team.getMaleSeniorPlayer(teamsize);
 			}
 			
 			else if( (ageGroup.contains("SENIOR"))  &&  (gender.contentEquals("FEMALE"))  &&  (role.contentEquals("COACH"))) {
-				club.getFemaleSeniorCoach(teamsize);
+			
+				team.getFemaleSeniorCoach(teamsize);
 			}
 			
 			else if( (ageGroup.contains("SENIOR"))  &&  (gender.contentEquals("FEMALE"))  &&  (role.contentEquals("PLAYER"))) {
-				club.getFemaleSeniorPlayer(teamsize);
+				team.getFemaleSeniorPlayer(teamsize);
 			}
 			
 		

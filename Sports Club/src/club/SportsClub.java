@@ -2,7 +2,7 @@ package club;
 
 import java.time.LocalDate;
 
-public class SportsClub extends Address {
+public class SportsClub  {
 
 	String firstName;
 	String lastName;
@@ -11,15 +11,17 @@ public class SportsClub extends Address {
 	String nationality;
 	String ageGroup;
 	String role;
+	
+	
+	String addressLine1;
+	String addressLine2;
+	String city;
+	String state;
+	 String country;
+	String postcode;
 
-	public String getAgeGroup() {
-		return ageGroup;
-	}
 
-	public void setAgeGroup(String ageGroup) {
-		this.ageGroup = ageGroup;
-	}
-
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -68,6 +70,70 @@ public class SportsClub extends Address {
 	public void setRole(String role) {
 		this.role = role;
 	}
+
+	public String getAddressLine1() {
+		return addressLine1;
+	}
+
+	public void setAddressLine1(String addressLine1) {
+		this.addressLine1 = addressLine1;
+	}
+
+	public String getAddressLine2() {
+		return addressLine2;
+	}
+
+	public void setAddressLine2(String addressLine2) {
+		this.addressLine2 = addressLine2;
+	}
+
+	public String getCity() {
+		return city;
+	}
 	
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getZipcode() {
+		return postcode;
+	}
+
+	public void setZipcode(String zipcode) {
+		this.postcode = zipcode;
+	}
+
+
+	public String getAgeGroup() {
+		return ageGroup;
+	}
+
+	public void setAgeGroup(String ageGroup) {
+		this.ageGroup = ageGroup;
+	}
+
+	
+	 
+
+		
+
+
+		 
 
 }
