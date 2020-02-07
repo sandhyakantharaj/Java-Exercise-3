@@ -10,18 +10,14 @@ public class Main  {
 
 
 
-public Main(String firstName, String lastName, String gender, String nationality, LocalDate DOB,
-			String addressLine1, String addressLine2, String city, String state, String postcode, String country) {
-		
-	}
-
 
 static ArrayList<Team> memberdetails = new ArrayList<Team>();
 
 
 	  
 	public static void main(String[] args)  {
-				
+	
+		
 				// Team members(players)
 		memberdetails.add(new Team("Sania", "Mirza", "PLAYER", "FEMALE", "Indian", LocalDate.of(1992, 01, 14),
 				"46,Quadrant court", "Mantri square", "Hyderabad", "Andra Pradesh", "70140", "INDIA"));
@@ -240,30 +236,7 @@ static ArrayList<Team> memberdetails = new ArrayList<Team>();
 				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
 		memberdetails.add(new Team("Shalini", "Shada", "COACH", "FEMALE", "British", LocalDate.of(1985, 11, 14),
 				"46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
-		
-		/*
-		 * memberdetails.add(new Team("Salman", "Khan", "COACH", "MIXED", "British",
-		 * LocalDate.of(1984, 11, 14), "46,Quadrant court", "Mirla square", "Berkshire",
-		 * "Reading", "RG21 7uh", "UK")); memberdetails.add(new Team("Salman", "Khan",
-		 * "COACH", "MIXED", "British", LocalDate.of(1984, 11, 14), "46,Quadrant court",
-		 * "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
-		 * memberdetails.add(new Team("Sareez", "Khan", "COACH", "MIXED", "British",
-		 * LocalDate.of(1983, 11, 14), "46,Quadrant court", "Mirla square", "Berkshire",
-		 * "Reading", "RG21 7uh", "UK")); memberdetails.add(new Team("Faraha", "Akthar",
-		 * "COACH", "MIXED", "British", LocalDate.of(1984, 11, 14), "46,Quadrant court",
-		 * "Mirla square", "Berkshire", "Reading", "RG21 7uh", "UK"));
-		 * memberdetails.add(new Team("Shameem Ali", "Khan", "COACH", "MIXED",
-		 * "British", LocalDate.of(1985, 11, 14), "46,Quadrant court", "Mirla square",
-		 * "Berkshire", "Reading", "RG21 7uh", "UK"));
-		 * 
-		 * memberdetails.add(new Team("Maksood Ali", "Khan", "COACH", "MIXED",
-		 * "British", LocalDate.of(2005, 11, 14), "46,Quadrant court", "Mirla square",
-		 * "Berkshire", "Reading", "RG21 7uh", "UK")); memberdetails.add(new
-		 * Team("Mehaboob", "Khan", "COACH", "MIXED", "British", LocalDate.of(2004, 11,
-		 * 14), "46,Quadrant court", "Mirla square", "Berkshire", "Reading", "RG21 7uh",
-		 * "UK"));
-		 * 
-		 */
+	
 		
 		System.out.println("TOTAL NUMBER :" +memberdetails.size());
 		
