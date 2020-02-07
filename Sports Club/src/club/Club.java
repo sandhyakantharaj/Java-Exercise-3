@@ -27,7 +27,7 @@ int i=0;
 			  year=age.getYears();
 			 
 	  
-			  if ( (year<18)   &&  (memAry1.get(i).getGender().contentEquals("MALE"))   &&   (memAry1.get(i).getRole().contains("C") )  )
+			  if ( (year<18)   &&  (memAry1.get(i).getGender().contentEquals("MALE"))   &&   (memAry1.get(i).getRole().contentEquals("COACH") )  )
 	  {
 	  memAry2.add(memAry1.get(i)); 
 	  }
@@ -59,7 +59,7 @@ int i=0;
 			  year=age.getYears();
 			 
 	  
-	  if ( (year<18)  && (memAry1.get(i).getGender().contentEquals("MALE")) && (memAry1.get(i).getRole().contains("P")))
+	  if ( (year<18)  && (memAry1.get(i).getGender().contentEquals("MALE")) && (memAry1.get(i).getRole().contentEquals("PLAYER")))
 	  {
 		  
 	  memAry2.add(memAry1.get(i)); 
@@ -89,7 +89,7 @@ int i=0;
 	  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now());
 	  int year=age.getYears();
 	  
-	  if ((year<18) && ((memAry1.get(i).getGender().contains("F"))) && (memAry1.get(i).getRole().contains("C"))) 
+	  if ((year<18) && ((memAry1.get(i).getGender().contentEquals("FEMALE"))) && (memAry1.get(i).getRole().contentEquals("COACH"))) 
 	  {
 		  System.out.println(1);
 		  
@@ -119,7 +119,7 @@ int i=0;
 	  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now());
 	  int year=age.getYears();
 	  
-	  if ((year<18) && (memAry1.get(i).getGender().contains("F")) && (memAry1.get(i).getRole().contains("P"))) 
+	  if ((year<18) && (memAry1.get(i).getGender().contentEquals("FEMALE")) && (memAry1.get(i).getRole().contentEquals("PLAYER"))) 
 	  {
 		  
 	  memAry2.add(memAry1.get(i)); 
@@ -148,7 +148,7 @@ int i=0;
 			  year=age.getYears();
 			  
 			  
-			  if((year >= 18)  && (memAry1.get(i).getGender().contentEquals("MALE")) && (memAry1.get(i).getRole().contains("C"))) {
+			  if((year >= 18)  && (memAry1.get(i).getGender().contentEquals("MALE")) && (memAry1.get(i).getRole().contentEquals("COACH"))) {
 	  
 				  memAry2.add(memAry1.get(i));
 	  
@@ -176,7 +176,7 @@ int i=0;
 			  year=age.getYears();
 			  
 			  
-			  if((year >= 18) && (memAry1.get(i).getGender().contentEquals("MALE")) && (memAry1.get(i).getRole().contains("P"))) {
+			  if((year >= 18) && (memAry1.get(i).getGender().contentEquals("MALE")) && (memAry1.get(i).getRole().contentEquals("PLAYER"))) {
 	  
 				  memAry2.add(memAry1.get(i));
 	  
@@ -202,7 +202,7 @@ int i=0;
 			  year=age.getYears();
 			  
 			  
-			  if((year >= 18) && (memAry1.get(i).getGender().contains("F")) && (memAry1.get(i).getRole().contains("C"))) {
+			  if((year >= 18) && (memAry1.get(i).getGender().contentEquals("FEMALE")) && (memAry1.get(i).getRole().contentEquals("COACH"))) {
 	  
 				  memAry2.add(memAry1.get(i));
 	  
@@ -229,7 +229,7 @@ int i=0;
 			  int year=age.getYears();
 			  
 			  
-			  if((year >= 18) && (memAry1.get(i).getGender().contains("F")) && (memAry1.get(i).getRole().contains("P"))) {
+			  if((year >= 18) && (memAry1.get(i).getGender().contentEquals("FEMALE")) && (memAry1.get(i).getRole().contentEquals("PLAYER"))) {
 	  
 				  memAry2.add(memAry1.get(i));
 	  
@@ -255,7 +255,7 @@ int i=0;
 			  year=age.getYears();
 			  
 			  
-			  if((year< 18) && (memAry1.get(i).getGender().contentEquals("MIXED")) && (memAry1.get(i).getRole().contains("C"))) {
+			  if((year< 18) && (memAry1.get(i).getGender().contentEquals("MIXED")) && (memAry1.get(i).getRole().contentEquals("COACH"))) {
 	  
 				  memAry2.add(memAry1.get(i));
 	  
@@ -272,260 +272,97 @@ int i=0;
 	  
 		
 	}
+	//junior mixed coach
+		public void getJuniorMixedPlayer(int teamsize) {
+			// TODO Auto-generated method stub
+			 while(x) {
+				  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
+				  year=age.getYears();
+				  
+				  
+				  if((year< 18) && (memAry1.get(i).getGender().contentEquals("MIXED")) && (memAry1.get(i).getRole().contentEquals("PLAYER"))) {
+		  
+					  memAry2.add(memAry1.get(i));
+		  
+				  		} i++;
+		  
+				  		if(memAry2.size()==teamsize) { 
+				  			x=false;
+		  
+				  		System.out.println("Here you go" );
+				  		
+				  		System.out.println(memAry2.toString() + ""); }
+		  
+			  			}
+		  
+		}
 
-	//junior mixed player
-	public void getJuniorMixedPlayer(int teamsize) {
-		// TODO Auto-generated method stub
-		 while(x) {
-			  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
-			  year=age.getYears();
-			  
-			  
-			  if((year< 18) && (memAry1.get(i).getGender().contentEquals("MIXED")) && (memAry1.get(i).getRole().contains("P"))) {
-	  
-				  memAry2.add(memAry1.get(i));
-	  
-			  		} i++;
-	  
-	  
-	  
-			  		if(memAry2.size()==teamsize) { 
-			  			x=false;
-	  
-			  		System.out.println("Here you go" );
-			  		
-			  		System.out.println(memAry2.toString() + ""); }
-	  
-		  			}
-	  
-		
-	}
 
-	//senior mixed coach
-	public void getSeniorMixedCoach(int teamsize) {
-		// TODO Auto-generated method stub
-		 while(x) {
-			  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
-			  year=age.getYears();
-			  
-			  
-			  if((year >= 18) && (memAry1.get(i).getGender().contentEquals("MIXED"))&& (memAry1.get(i).getRole().contains("C"))) {
-	  
-				  memAry2.add(memAry1.get(i));
-	  
-			  		} i++;
-	  
-	  
-	  
-			  		if(memAry2.size()==teamsize) { 
-			  			x=false;
-	  
-			  		System.out.println("Here you go:" );
-			  		
-			  		System.out.println(memAry2.toString() + ""); }
-	  
-		  			}
-		
+		public void getSeniorMixedPlayer(int teamsize) {
+			 while(x) {
+				  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
+				  year=age.getYears();
+				  
+				  
+				  if((year>= 18) && (memAry1.get(i).getGender().contentEquals("MIXED")) && (memAry1.get(i).getRole().contentEquals("PLAYER"))) {
+		  
+					  memAry2.add(memAry1.get(i));
+		  
+				  		} i++;
+		  
+				  		if(memAry2.size()==teamsize) { 
+				  			x=false;
+		  
+				  		System.out.println("Here you go" );
+				  		
+				  		System.out.println(memAry2.toString() + ""); }
+		  
+			  			}
+		  
+		}
+
+
+		public void getSeniorMixedCoach(int teamsize) {
+			 while(x) {
+				  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
+				  year=age.getYears();
+				  
+				  
+				  if((year>= 18) && (memAry1.get(i).getGender().contentEquals("MIXED")) && (memAry1.get(i).getRole().contentEquals("COACH"))) {
+		  
+					  memAry2.add(memAry1.get(i));
+		  
+				  		} i++;
+		  
+				  		if(memAry2.size()==teamsize) { 
+				  			x=false;
+		  
+				  		System.out.println("Here you go" );
+				  		
+				  		System.out.println(memAry2.toString() + ""); }
+		  
+			  			}
+		  
+			
+		}
+	
+	
 	}
 	 
 	
-	//senior mixed player
-	public void getSeniorMixedPlayer(int teamsize) {
-		// TODO Auto-generated method stub
-		 while(x) {
-			  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
-			  year=age.getYears();
-			  
-			  
-			  if((year >= 18) && (memAry1.get(i).getGender().contentEquals("MIXED"))&& (memAry1.get(i).getRole().contains("P"))) {
-	  
-				  memAry2.add(memAry1.get(i));
-	  
-			  		} i++;
-	  
-	  
-	  
-			  		if(memAry2.size()==teamsize) { 
-			  			x=false;
-	  
-			  		System.out.println("Here you go:" );
-			  		
-			  		System.out.println(memAry2.toString() + ""); }
-	  
-		  			}
-		
-	}
 
 
-	public void getSeniorMixedTeam(int teamsize) {
-		// TODO Auto-generated method stub
-		 while(x) {
-			  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
-			  year=age.getYears();
-			  
-			  
-			  if((year >= 18) && (memAry1.get(i).getGender().contentEquals("MIXED"))&& (memAry1.get(i).getRole().contains("U"))) {
-	  
-				  memAry2.add(memAry1.get(i));
-	  
-			  		} i++;
-	  
-	  
-	  
-			  		if(memAry2.size()==teamsize) { 
-			  			x=false;
-	  
-			  		System.out.println("Here you go:" );
-			  		
-			  		System.out.println(memAry2.toString() + "");
-			  		}
-	  
-		 }
-	}
-		 
-public void getSeniorMaleTeam(int teamsize) {
-				// TODO Auto-generated method stub
-				 while(x) {
-					  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
-					  year=age.getYears();
-					  
-					  
-					  if((year >= 18) && (memAry1.get(i).getGender().contentEquals("MALE"))&& (memAry1.get(i).getRole().contains("U"))) {
-			  
-						  memAry2.add(memAry1.get(i));
-			  
-					  		} i++;
-			  
-			  
-			  
-					  		if(memAry2.size()==teamsize) { 
-					  			x=false;
-			  
-					  		System.out.println("Here you go:" );
-					  		
-					  		System.out.println(memAry2.toString() + ""); }
-			  
-				  			}
-		 }
-		 
-	public void getSeniorFemaleTeam(int teamsize) {
-						// TODO Auto-generated method stub
-						 while(x) {
-							  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
-							  year=age.getYears();
-							  
-							  
-							  if((year >= 18) && (memAry1.get(i).getGender().contains("F"))&& (memAry1.get(i).getRole().contains("U"))) {
-					  
-								  memAry2.add(memAry1.get(i));
-					  
-							  		} i++;
-					  
-					  
-					  
-							  		if(memAry2.size()==teamsize) { 
-							  			x=false;
-					  
-							  		System.out.println("Here you go:" );
-							  		
-							  		System.out.println(memAry2.toString() + ""); }
-					  
-						  			}
-	}
-		 
-		 
-	public void getJuniorMaleTeam(int teamsize) 
-	  {
-		 
-		  while(x) {
-		
-			
-			  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
-			  year=age.getYears();
-			 
-	  
-			  if ( (year<18)   &&  (memAry1.get(i).getGender().contentEquals("MALE"))   &&   (memAry1.get(i).getRole().contains("U") )  )
-	  {
-	  memAry2.add(memAry1.get(i)); 
-	  }
-	  i++; 
-	 
-	  
-			
-			  if(memAry2.size()==teamsize)
-			  {
-				  x=false;
-			  
-			  System.out.println("Here you go:" );
-			  System.out.println(memAry2.toString() + "/"); }
-			   
-		  }
-	 
-	
-}		 
 
-	public void getJuniorFemaleTeam(int teamsize) 
-	  {
+
+
 		 
-		  while(x) {
-		
-			
-			  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
-			  year=age.getYears();
-			 
-	  
-			  if ( (year<18)   &&  (memAry1.get(i).getGender().contains("F"))   &&   (memAry1.get(i).getRole().contains("U") )  )
-	  {
-	  memAry2.add(memAry1.get(i)); 
-	  }
-	  i++; 
-	 
-	  
-			
-			  if(memAry2.size()==teamsize)
-			  {
-				  x=false;
-			  
-			  System.out.println("Here you go:" );
-			  System.out.println(memAry2.toString() + "/"); }
-			   
-		  }
-	 
+
+		 
 	
-}
 		 
-	public void getJuniorMixedTeam(int teamsize) 
-	  {
-		 
-		  while(x) {
-		
-			
-			  Period age=Period.between(memAry1.get(i).getDOB(),LocalDate.now()); int
-			  year=age.getYears();
-			 
-	  
-			  if ( (year<18)   &&  (memAry1.get(i).getGender().contentEquals("MIXED"))   &&   (memAry1.get(i).getRole().contains("U") )  )
-	  {
-	  memAry2.add(memAry1.get(i)); 
-	  }
-	  i++; 
-	 
-	  
-			
-			  if(memAry2.size()==teamsize)
-			  {
-				  x=false;
-			  
-			  System.out.println("Here you go:" );
-			  System.out.println(memAry2.toString() + "/"); }
-			   
-		  }
-	 
 	
-}
-				 
-		 
-		 
+
+	
 		 
 		 
 		 
@@ -534,7 +371,6 @@ public void getSeniorMaleTeam(int teamsize) {
 	 
 	  
 	  
-	    
-}
+	 
 
 
